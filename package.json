@@ -1,0 +1,17 @@
+{
+  "fitbit": {
+    "appUUID": "4d2faa40-4354-4b7c-8210-49c661365bbf",
+    "appType": "clockface",
+    "appDisplayName": "DarkFace",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_heart_rate"
+    ],
+    "i18n": {
+      "en": {
+        "name": "DarkFace"
+      }
+    }
+  }
+}

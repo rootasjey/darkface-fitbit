@@ -1,0 +1,33 @@
+.background {
+  viewport-fill: black;
+}
+
+#clockFace {
+  font-size: 130;
+  font-family: System-Light;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 50%+40;
+  fill: white;
+}
+
+#date {
+  font-size: 30;
+  font-family: System-Light;
+  text-anchor: middle;
+  text-length: 40;
+  x: 50%;
+  y: 40;
+  fill: white;
+}
+
+#heartrate {
+  font-size: 30;
+  font-family: System-Light;
+  text-anchor: middle;
+  text-length: 40;
+  x: 170;
+  y: 220;
+  fill: white;
+}

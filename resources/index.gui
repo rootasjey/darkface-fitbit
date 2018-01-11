@@ -1,0 +1,16 @@
+<svg class="background">
+  <text id="date"/>
+  <text id="clockFace" />
+  
+  <g pointer-events="visible">
+    <animateTransform attributeType="scale" from="1" to="1.1"  begin="load" final="restore" dur="1" repeatCount="indefinite" />
+    
+    <image href="heart.png" width="60" height="60" x="140" y="185">
+      <animate attributeName="opacity" begin="load" from="1" to="0" dur="1" final="restore" repeatCount="indefinite"/>
+      <animate attributeName="x"  begin="load" from="140" to="125" dur="1" final="restore" repeatCount="indefinite" />
+      <animate attributeName="y"  begin="load" from="185" to="165" dur="1" final="restore" repeatCount="indefinite" />
+    </image>
+  </g>
+  
+  <text id="heartrate">72</text>
+</svg>
