@@ -1,16 +1,62 @@
-<svg class="background">
-  <text id="date"/>
-  <text id="clockFace" />
-  
-  <g pointer-events="visible">
-    <animateTransform attributeType="scale" from="1" to="1.1"  begin="load" final="restore" dur="1" repeatCount="indefinite" />
+<svg id="root" class="background" pointer-events="visible">
+  <svg id="mainDisplay">
+    <text id="date"/>
     
-    <image href="heart.png" width="60" height="60" x="140" y="185">
-      <animate attributeName="opacity" begin="load" from="1" to="0" dur="1" final="restore" repeatCount="indefinite"/>
-      <animate attributeName="x"  begin="load" from="140" to="125" dur="1" final="restore" repeatCount="indefinite" />
-      <animate attributeName="y"  begin="load" from="185" to="165" dur="1" final="restore" repeatCount="indefinite" />
-    </image>
-  </g>
-  
-  <text id="heartrate">72</text>
+    <g id="clockface">
+      <text id="clockDigits1" />
+      <text id="clockDigits2" />
+    </g>
+
+    <g id="heartRateContainer" pointer-events="visible">
+      <image id="animatedImage" href="icons/heart.png" width="60" height="60" x="140" y="185">
+      </image>
+      
+      <text id="heartRate">--</text>
+    </g>
+    
+    <svg x="110" y="145" class="hiddenContainer" id="stepsContainer">
+      <arc x="0" y="40" width="60" height="60" fill="#2B2D2E"
+          arc-width="5" start-angle="0" sweep-angle="360" />
+      <arc id="stepsArc" x="0" y="40" width="60" height="60" fill="white"
+          arc-width="5" start-angle="0" sweep-angle="360" />
+      <image href="icons/steps.png" width="40" height="40" x="13" y="50"></image>
+      <text id="steps" class="activity__label" x="70" y="80">--</text>
+    </svg>
+    
+    <svg x="110" y="145" class="hiddenContainer" id="activeMinutesContainer">
+      <arc x="0" y="40" width="60" height="60" fill="#2B2D2E"
+          arc-width="5" start-angle="0" sweep-angle="360" />
+      <arc id="activeMinutesArc" x="0" y="40" width="60" height="60" fill="white"
+          arc-width="5" start-angle="0" sweep-angle="360" />
+      <image href="icons/activeMinutes.png" width="40" height="40" x="13" y="50"></image>
+      <text id="activeMinutes" class="activity__label" x="70" y="80">--</text>
+    </svg>
+    
+    <svg x="110" y="145" class="hiddenContainer" id="elevationGainContainer">
+      <arc x="0" y="40" width="60" height="60" fill="#2B2D2E"
+          arc-width="5" start-angle="0" sweep-angle="360" />
+      <arc id="elevationGainArc" x="0" y="40" width="60" height="60" fill="white"
+          arc-width="5" start-angle="0" sweep-angle="360" />
+      <image href="icons/elevationGain.png" width="40" height="40" x="13" y="50"></image>
+      <text id="elevationGain" class="activity__label" x="70" y="80">--</text>
+    </svg>
+    
+    <svg x="110" y="145" class="hiddenContainer" id="distanceContainer">
+      <arc x="0" y="40" width="60" height="60" fill="#2B2D2E"
+          arc-width="5" start-angle="0" sweep-angle="360" />
+      <arc id="distanceArc" x="0" y="40" width="60" height="60" fill="white"
+          arc-width="5" start-angle="0" sweep-angle="360" />
+      <image href="icons/distance.png" width="40" height="40" x="13" y="50"></image>
+      <text id="distance" class="activity__label" x="70" y="80">--</text>
+    </svg>
+    
+    <svg x="110" y="145" class="hiddenContainer" id="caloriesContainer">
+      <arc x="0" y="40" width="60" height="60" fill="#2B2D2E"
+          arc-width="5" start-angle="0" sweep-angle="360" />
+      <arc id="caloriesArc" x="0" y="40" width="60" height="60" fill="white"
+          arc-width="5" start-angle="0" sweep-angle="360" />
+      <image href="icons/calories.png" width="40" height="40" x="13" y="50"></image>
+      <text id="calories" class="activity__label" x="70" y="80">--</text>
+    </svg>
+  </svg>
 </svg>

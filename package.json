@@ -6,7 +6,8 @@
     "iconFile": "resources/icon.png",
     "wipeColor": "",
     "requestedPermissions": [
-      "access_heart_rate"
+      "access_heart_rate",
+      "access_activity"
     ],
     "i18n": {
       "en": {

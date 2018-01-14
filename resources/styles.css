@@ -2,12 +2,41 @@
   viewport-fill: black;
 }
 
-#clockFace {
-  font-size: 130;
-  font-family: System-Light;
-  text-length: 32;
-  text-anchor: middle;
+#mainDisplay {
+  visibility: visible;
+}
+
+.activity__label {
+  font-size: 30;
+  font-family: System-Regular;
+  text-length: 50;
+  fill: white;
+}
+
+#clockface {
   x: 50%;
+  text-length: 4;
+  text-anchor: middle;
+}
+
+#clockDigits1 {
+  font-size: 130;
+  font-family: Colfax-Thin;
+  /*font-family: System-Light;*/
+  text-length: 2;
+  text-anchor: end;
+  x: 45%;
+  y: 50%+40;
+  fill: white;
+}
+
+#clockDigits2 {
+  font-size: 130;
+  font-family: Colfax-Medium;
+  /*font-family: System-Bold;*/
+  text-length: 2;
+  text-anchor: start;
+  x: 45%;
   y: 50%+40;
   fill: white;
 }
@@ -22,7 +51,7 @@
   fill: white;
 }
 
-#heartrate {
+#heartRate {
   font-size: 30;
   font-family: System-Light;
   text-anchor: middle;
@@ -30,4 +59,8 @@
   x: 170;
   y: 220;
   fill: white;
+}
+
+.hiddenContainer {
+  visibility: hidden;
 }
